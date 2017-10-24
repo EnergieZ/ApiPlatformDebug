@@ -1,0 +1,13 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: localhost
+    database_port: null
+    database_name: app
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_password: 1234
+    mailer_username: mail@gmail.com
+    mailer_host: smtp.gmail.com
+    mailer_port: 587
+    secret: SecretToChange

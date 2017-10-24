@@ -1,0 +1,91 @@
+html, body{
+  height: 99%;
+  box-sizing: border-box;
+}
+body#login-page {
+  font-family: 'Rubik', sans-serif; //overwrite useragent
+  header{
+    text-align: right;
+    font-size: 12px;
+    padding: 15px 30px;
+    justify-self: flex-start;
+  }
+  .general-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 600px;
+    height: 90%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    text-align: center;
+    .error {
+      border: solid 2px orange;
+      padding: 15px;
+      border-radius: 5px;
+      a {
+        text-decoration: none;
+      }
+    }
+    img {
+      align-self: center;
+    }
+    form {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 15px 30px;
+      div.form {
+        display: flex;
+        margin: 10px 0;
+        flex: 1;
+      }
+      label {
+        display: inline-block;
+        flex:1;
+        box-sizing: border-box;
+        font-weight: 500;
+        text-align: left;
+        line-height: 45px;
+      }
+      input[type=text], input[type=password] {
+        flex: 3;
+        padding: 0 15px;
+        line-height: 45px;
+        border: solid 1px $grey;
+        background-color: $white;
+        width: calc(65% - 2px); // 2px = border
+        box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      input[type=submit]{
+        color: $white;
+        background-color: $blueLogo;
+        padding: 15px;
+        border: none 0;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 22px;
+        box-sizing: border-box;
+      }
+    }
+    a.forget {
+      flex: 1;
+      display: inline-block;
+      margin-top: 30px;
+      color: orange;
+    }
+    footer {
+      text-align: center;
+      color: $white;
+      font-size: $fontSizeVerySmallText;
+      justify-self: flex-end;
+      a {
+        color: orange;
+        text-decoration: underline;
+      }
+    }
+  }
+}

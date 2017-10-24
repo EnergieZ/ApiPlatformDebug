@@ -1,0 +1,5 @@
+services:
+    ticket.search_filter:
+        parent: 'api_platform.doctrine.orm.search_filter'
+        arguments: [ {project.customer.id: 'exact', project.id: 'exact', project.EAteamUser: 'exact'} ]
+        tags: [ 'api_platform.filter' ]
